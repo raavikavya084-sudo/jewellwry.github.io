@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Aura | Jewellery</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #fffaf3;
+  color: #33251d;
+}
+
+header {
+  background: #fff;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eadcc8;
+}
+
+.logo {
+  font-size: 25px;
+  color: #a77b32;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: #33251d;
+}
+
+.hero {
+  text-align: center;
+  padding: 75px 20px;
+  background: linear-gradient(135deg, #f4e5cd, #fffaf3);
+}
+
+.hero h1 {
+  font-size: clamp(35px, 7vw, 60px);
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #a77b32;
+  color: white;
+  padding: 13px 25px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px 0 25px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 25px;
+  padding: 20px 7% 50px;
+}
+
+.product {
+  background: white;
+  text-align: center;
+  padding-bottom: 20px;
+  border: 1px solid #eee2d1;
+}
+
+.product img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.product h3 {
+  margin: 15px 0 8px;
+}
+
+.price {
+  color: #a77b32;
+  margin-bottom: 15px;
+}
+
+.contact {
+  text-align: center;
+  background: #f2e5d1;
+  padding: 45px 20px;
+}
+
+.contact p {
+  margin: 15px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #33251d;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 7px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">GOLDEN AURA ✨</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Jewellery That Tells Your Story</h1>
+  <p>Timeless elegance. Beautiful moments. Golden memories.</p>
+  <a href="#collection" class="btn">Explore Collection</a>
+</section>
+
+<h2 id="collection">Our Jewellery Collection</h2>
+
+<section class="products">
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" alt="Elegant earrings">
+    <h3>Elegant Earrings</h3>
+    <p class="price">₹1,499</p>
+    <a class="btn" href="#contact">Enquire Now</a>
+  </div>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="Gold necklace">
+    <h3>Classic Necklace</h3>
+    <p class="price">₹2,499</p>
+    <a class="btn" href="#contact">Enquire Now</a>
+  </div>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" alt="Beautiful rings">
+    <h3>Luxury Rings</h3>
+    <p class="price">₹999</p>
+    <a class="btn" href="#contact">Enquire Now</a>
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+  <h2>Let's Connect</h2>
+  <p>Interested in our jewellery collection?</p>
+  <a class="btn"
+     href="https://wa.me/91XXXXXXXXXX"
+     target="_blank">Contact on WhatsApp</a>
+  <p>Replace the example WhatsApp number with your business number.</p>
+</section>
+
+<footer>
+  © 2026 Golden Aura Jewellery | All Rights Reserved
+</footer>
+
+</body>
+</html>
